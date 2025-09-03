@@ -10,7 +10,7 @@
 	],
 	"headers": [
 		{
-			"source": "/assets/(.*)",
+			"source": "/assets/(.*)", // Statik assets uchun
 			"headers": [
 				{
 					"key": "Cache-Control",
@@ -19,7 +19,7 @@
 			]
 		},
 		{
-			"source": "/*.(js|css|woff2|png|jpg|svg)",
+			"source": "/*", // Barcha fayllar uchun umumiy qoida
 			"headers": [
 				{
 					"key": "Cache-Control",
